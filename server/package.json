@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "nodemon ./bin/www --exec babel-node"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.15.5",
+    "mongodb": "^3.0.3",
+    "mongoose": "^5.0.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.1"
+  }
+}

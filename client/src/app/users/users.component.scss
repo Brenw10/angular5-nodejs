@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+section:not(.main) {
+    width: 70%;
+    margin: 20px;
+}
+
+mat-table {
+    text-align: center;
+}
+
+.float-button{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
