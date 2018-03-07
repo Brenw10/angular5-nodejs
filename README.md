@@ -1,3 +1,7 @@
+## Prerequisites
+ - Install node
+ - Install angular-cli `npm install -g @angular/cli`
+
 ## Client:
  - Run `ng serve` to start development server
  - Run `ng build --prod` to create dist folder with compiled app.
