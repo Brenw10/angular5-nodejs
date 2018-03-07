@@ -9,3 +9,5 @@
 
 ## Server
  - Run `npm run serve` to start development server
+ - Run `npm run build` to compile code
+ - Run `npm run serve-build` to compile and serve the code
