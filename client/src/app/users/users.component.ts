@@ -9,8 +9,8 @@ import { ApiService } from '../api.service';
   styleUrls: ['./users.component.scss']
 })
 
-export class UsersComponent implements OnInit {
-  users: Array<Object>;
+export class UsersComponent {
+  users: MatTableDataSource<Object>;
   displayColumns: Array<String>;
 
   constructor(private apiService: ApiService) {
@@ -18,12 +18,8 @@ export class UsersComponent implements OnInit {
     this.displayColumns = ['name', 'login', 'email', 'wwid', 'action'];
   }
 
-  ngOnInit() {
-  }
-
   filter(query: string) {
-    const value = query.trim().toLowerCase();
-    this.users.filter = value;
+    this.users.filter = query;
   }
 
 }
