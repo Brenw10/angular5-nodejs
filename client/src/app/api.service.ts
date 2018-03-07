@@ -11,7 +11,6 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   public getAllUsers() {
-    console.log('x')
     return this.http.get(this.API_URL + '/users');
   }
 
