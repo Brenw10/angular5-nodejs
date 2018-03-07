@@ -1,6 +1,7 @@
 ## Prerequisites
- - Install node
- - Install angular-cli `npm install -g @angular/cli`
+ - Install Node
+ - Install Angular CLI `npm install -g @angular/cli`
+ - Run `npm install` at client and server folder
 
 ## Client:
  - Run `ng serve` to start development server
