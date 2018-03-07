@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "serve": "nodemon ./bin/www --exec babel-node"
+    "serve": "nodemon ./bin/www --exec babel-node --presets es2017",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel *.js */*.js */*/*.js ./bin/www -s -d dist",
+    "serve-build": "npm run build && node ./dist/bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -13,6 +16,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
     "nodemon": "^1.17.1"
   }

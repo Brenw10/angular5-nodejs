@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-import app from '../app';
+var app = require('../app');
 var debug = require('debug')('matrix:server');
 var http = require('http');
 
