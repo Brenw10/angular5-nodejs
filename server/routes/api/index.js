@@ -7,4 +7,4 @@ const router = express.Router();
 router.use('/users', users);
 router.use('/skills', skills);
 
-module.exports = router;
+export default router;

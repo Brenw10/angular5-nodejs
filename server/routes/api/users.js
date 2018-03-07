@@ -24,4 +24,4 @@ router.post('/:userId/skills/:skillId', function (req, res) {
   user.setUserSkill(data).then(data => res.send(data)).catch(console.log);
 });
 
-module.exports = router;
+export default router;

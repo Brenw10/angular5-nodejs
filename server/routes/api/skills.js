@@ -12,4 +12,4 @@ router.post('/', function (req, res) {
     skill.createSkill(name).then(data => res.send(data));
 });
 
-module.exports = router;
+export default router;

@@ -18,4 +18,4 @@ async function setUserSkill(data) {
     return UserCollection.Model.findOne({ _id: data.userId }).populate('skills.skill').exec();
 }
 
-module.exports = { getUserById, getUsers, createUser, setUserSkill };
+export default { getUserById, getUsers, createUser, setUserSkill };

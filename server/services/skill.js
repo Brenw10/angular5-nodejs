@@ -9,4 +9,4 @@ function createSkill(name) {
     return skill.save();
 }
 
-module.exports = { getSkills, createSkill };
+export default { getSkills, createSkill };
