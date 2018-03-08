@@ -10,9 +10,6 @@
         ],
         "minify"
     ],
-    "ignore": [
-        "node_modules"
-    ],
     "plugins": [
         "add-module-exports"
     ]
