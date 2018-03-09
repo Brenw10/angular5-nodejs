@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "nodemon ./bin/www --exec babel-node",
-    "clean": "rm -rf dist",
-    "build": "npm run clean && babel . ./bin/www -s -d dist --ignore node_modules",
-    "serve-build": "npm run build && node ./dist/bin/www"
+    "clean": "rm -rf .tmp && rm -rf dist",
+    "build": "npm run clean && babel . ./bin/www -s -d .tmp --ignore node_modules",
+    "serve-build": "npm run build && node ./.tmp/bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
