@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "nodemon ./bin/www --exec babel-node",
-    "clean": "rm -rf .tmp && rm -rf dist",
-    "build": "npm run clean && babel . ./bin/www -s -d .tmp --ignore node_modules",
-    "serve-build": "npm run build && node ./.tmp/bin/www"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && webpack",
+    "serve-build": "npm run build && node ./dist"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -16,9 +16,13 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-minify": "^0.3.0",
-    "nodemon": "^1.17.1"
+    "nodemon": "^1.17.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
   }
 }
