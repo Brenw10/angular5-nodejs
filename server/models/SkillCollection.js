@@ -7,4 +7,4 @@ const Schema = new Mongoose.Schema({
     name: String
 }, { collection: 'SkillCollection' });
 
-module.exports = { Mongoose, Schema, Model: Mongoose.model('SkillCollection', Schema) };
+export default { Mongoose, Schema, Model: Mongoose.model('SkillCollection', Schema) };

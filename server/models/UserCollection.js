@@ -13,4 +13,4 @@ const Schema = new Mongoose.Schema({
     ]
 }, { collection: 'UserCollection' });
 
-module.exports = { Mongoose, Schema, Model: Mongoose.model('UserCollection', Schema) };
+export default { Mongoose, Schema, Model: Mongoose.model('UserCollection', Schema) };
